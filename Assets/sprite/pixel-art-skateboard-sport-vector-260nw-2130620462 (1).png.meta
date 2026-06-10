@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: ba33e5a622b164173b524d2fb9a0c35d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8470787392802199655
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_0
+  - first:
+      213: 2290198929805938653
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_1
+  - first:
+      213: -4379278149016326934
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_2
+  - first:
+      213: 8351449996644490592
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_3
+  - first:
+      213: -4526837954795709069
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_4
+  - first:
+      213: 3297506827258284995
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_5
+  - first:
+      213: 4968890719232782163
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_6
+  - first:
+      213: 7321862779664122588
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_7
+  - first:
+      213: -1345523858653611951
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_8
+  - first:
+      213: 7243853947948316679
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_9
+  - first:
+      213: 3781203646783570439
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_10
+  - first:
+      213: 2937112566023549064
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_11
+  - first:
+      213: -8572113893080244439
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_12
+  - first:
+      213: -4266119325033809694
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_13
+  - first:
+      213: 3752467832959984450
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_14
+  - first:
+      213: -2678048320878874549
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_15
+  - first:
+      213: 4531051901644919143
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_16
+  - first:
+      213: 4731129829151337750
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_17
+  - first:
+      213: 3946698404617194387
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_18
+  - first:
+      213: 8120249151265517797
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_19
+  - first:
+      213: 859745495564349193
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_20
+  - first:
+      213: 5337493603239169753
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_21
+  - first:
+      213: 6946933512307856948
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_22
+  - first:
+      213: -8754714435742777960
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_23
+  - first:
+      213: -5497976388398156602
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_24
+  - first:
+      213: -4219100396718347028
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_25
+  - first:
+      213: -2198080406596945546
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_26
+  - first:
+      213: 7044902119903364205
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_27
+  - first:
+      213: 8047465984794118042
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_28
+  - first:
+      213: -8786255870037892565
+    second: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 419
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997ea241fb7b17a80800000000000000
+      internalID: -8470787392802199655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 419
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf001ceacb68cf10800000000000000
+      internalID: 2290198929805938653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 383
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec6043d9bda933c0800000000000000
+      internalID: -4379278149016326934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 383
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d9e69268f46e370800000000000000
+      internalID: 8351449996644490592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 383
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d55a44dd07d21c0800000000000000
+      internalID: -4526837954795709069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 383
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbc72b0df813cd20800000000000000
+      internalID: 3297506827258284995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 323
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fea9768cb05f440800000000000000
+      internalID: 4968890719232782163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 323
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2c80cb76b7c9560800000000000000
+      internalID: 7321862779664122588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 287
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1587320fd2db35de0800000000000000
+      internalID: -1345523858653611951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 287
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708354c39c6578460800000000000000
+      internalID: 7243853947948316679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 287
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70242fddea8897430800000000000000
+      internalID: 3781203646783570439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 287
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8807b2b3158b2c820800000000000000
+      internalID: 2937112566023549064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 227
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fd2ccc4dbb90980800000000000000
+      internalID: -8572113893080244439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 227
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e83ee5a313bbc4c0800000000000000
+      internalID: -4266119325033809694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 191
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243e8a6dc91731430800000000000000
+      internalID: 3752467832959984450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 191
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40fea6bd39a5dad0800000000000000
+      internalID: -2678048320878874549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 191
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7615760b2b781ee30800000000000000
+      internalID: 4531051901644919143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 191
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61de1d4538958a140800000000000000
+      internalID: 4731129829151337750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 131
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b0fcad94d75c630800000000000000
+      internalID: 3946698404617194387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_19
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 131
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e039d4849be0b070800000000000000
+      internalID: 8120249151265517797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_20
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 95
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fea5c19fd6eeb00800000000000000
+      internalID: 859745495564349193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_21
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 95
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de8df32726921a40800000000000000
+      internalID: 5337493603239169753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_22
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 95
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436dd571937786060800000000000000
+      internalID: 6946933512307856948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_23
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 95
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d319bea91018680800000000000000
+      internalID: -8754714435742777960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 35
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4fa02ba9343b3b0800000000000000
+      internalID: -5497976388398156602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_25
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 35
+        width: 374
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceca4edfa8eb275c0800000000000000
+      internalID: -4219100396718347028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_26
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679fa012489de71e0800000000000000
+      internalID: -2198080406596945546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_27
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d648c3e072584c160800000000000000
+      internalID: 7044902119903364205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9741b50da75eaf60800000000000000
+      internalID: 8047465984794118042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 0
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2263b876d2f01680800000000000000
+      internalID: -8786255870037892565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_0: -8470787392802199655
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_1: 2290198929805938653
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_10: 3781203646783570439
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_11: 2937112566023549064
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_12: -8572113893080244439
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_13: -4266119325033809694
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_14: 3752467832959984450
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_15: -2678048320878874549
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_16: 4531051901644919143
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_17: 4731129829151337750
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_18: 3946698404617194387
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_19: 8120249151265517797
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_2: -4379278149016326934
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_20: 859745495564349193
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_21: 5337493603239169753
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_22: 6946933512307856948
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_23: -8754714435742777960
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_24: -5497976388398156602
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_25: -4219100396718347028
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_26: -2198080406596945546
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_27: 7044902119903364205
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_28: 8047465984794118042
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_29: -8786255870037892565
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_3: 8351449996644490592
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_4: -4526837954795709069
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_5: 3297506827258284995
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_6: 4968890719232782163
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_7: 7321862779664122588
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_8: -1345523858653611951
+      pixel-art-skateboard-sport-vector-260nw-2130620462 (1)_9: 7243853947948316679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
