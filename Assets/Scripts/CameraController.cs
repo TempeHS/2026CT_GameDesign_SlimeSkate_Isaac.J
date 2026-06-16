@@ -16,6 +16,6 @@ public class CameraController : MonoBehaviour
         // Smoothly move camera toward target
         Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothSpeed);
 
-        transform.position = smoothedPos;
+
     }
 }
