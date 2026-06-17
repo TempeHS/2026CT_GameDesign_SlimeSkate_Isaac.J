@@ -1,39 +1,87 @@
 using UnityEngine;
 
-public class SkateboardController : MonoBehaviour
+public class SkateboardMovement : MonoBehaviour
 {
-    public float moveSpeed = 8f;
-    public float jumpForce = 12f;
+    public float moveForce = 20f;
+    public float maxSpeed = 12f;
+    public float groundStickForce = 20f;
+    public float drag = 2f;
+    public LayerMask groundMask;
 
     Rigidbody2D rb;
+    float groundAngle;
     bool grounded;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.freezeRotation = true;
     }
 
-    void Update()
-    {
-        // Horizontal movement
-        float x = Input.GetAxisRaw("Horizontal");
-        rb.linearVelocity = new Vector2(x * moveSpeed, rb.linearVelocity.y);
+void FixedUpdate()
+{
+    MoveAlongSlope_Fallback();
 
-        // Jump
-        if (Input.GetButtonDown("Jump") && grounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+    ApplyDrag();
+    ClampSpeed();
+}
+
+
+void UpdateGround()
+{
+    Vector2 origin = (Vector2)transform.position + Vector2.down * 0.2f;
+    float rayLength = 1.5f;
+
+    RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, rayLength, groundMask);
+
+    grounded = hit.collider != null;
+
+    if (grounded)
+        groundAngle = Vector2.SignedAngle(Vector2.up, hit.normal);
+}
+
+void MoveAlongSlope_Fallback()
+{
+    float input = Input.GetAxisRaw("Horizontal");
+
+    Vector2 moveDir;
+
+    if (!grounded)
+    {
+        moveDir = Vector2.right;
+    }
+    else
+    {
+        Vector2 slopeDirection = Quaternion.Euler(0, 0, groundAngle) * Vector2.right;
+        moveDir = slopeDirection;
     }
 
-    // Simple ground check
-    void OnCollisionEnter2D(Collision2D col)
+    rb.AddForce(moveDir * input * moveForce);
+}
+
+
+    void MoveAlongSlope()
     {
-        grounded = true;
+        float input = Input.GetAxisRaw("Horizontal");
+
+        Vector2 slopeDirection = Quaternion.Euler(0, 0, groundAngle) * Vector2.right;
+
+        rb.AddForce(slopeDirection * input * moveForce);
     }
 
-    void OnCollisionExit2D(Collision2D col)
+    void StickToGround()
     {
-        grounded = false;
+        rb.AddForce(Vector2.down * groundStickForce);
+    }
+
+    void ApplyDrag()
+    {
+        rb.linearVelocity *= 1f - (drag * Time.fixedDeltaTime);
+    }
+
+    void ClampSpeed()
+    {
+        if (rb.linearVelocity.magnitude > maxSpeed)
+            rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
     }
 }
