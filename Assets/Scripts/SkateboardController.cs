@@ -15,7 +15,6 @@ public class SkateboardMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true;
     }
 
 void FixedUpdate()

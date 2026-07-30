@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 5dbef98d85b8c479b82c7aa16c8a92c3
+guid: 03007b9821dcf4454962115c7bfad383
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -230347990380208152
-    second: floor_1_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -42,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -100,23 +97,31 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor_1_0
+      name: "Screenshot 2026-07-30 at 11.53.22\u202Fam_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 32
+        width: 1400
+        height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      outline:
+      - - {x: 0, y: -388}
+        - {x: 700, y: 0}
+        - {x: 0, y: 388}
+        - {x: -700, y: 0}
+      physicsShape:
+      - - {x: 0, y: -388}
+        - {x: 700, y: 0}
+        - {x: 0, y: 388}
+        - {x: -700, y: 0}
+      tessellationDetail: 0
       bones: []
-      spriteID: 8ef99a229b3adccf0800000000000000
-      internalID: -230347990380208152
+      spriteID: b4fe48343c1af4b51a503bfefb10698d
+      internalID: -180679002
       vertices: []
       indices: 
       edges: []
@@ -125,7 +130,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9823761f7bb0b443da75a8dffb7900a3
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +140,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      floor_1_0: -230347990380208152
+      "Screenshot 2026-07-30 at 11.53.22\u202Fam_0": -180679002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
