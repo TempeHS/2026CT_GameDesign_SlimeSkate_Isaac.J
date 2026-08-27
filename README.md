@@ -1,14 +1,12 @@
-# Unity Game Development Summary
+# Unity Game Development Summary 
 
-| Field | Detail |
+| General Details |  |
 |---|---|
-| **Game Title** | |
-| **Student Name(s)** | |
-| **Class / Course** | |
-| **Repository** | |
-| **Unity Version** | |
-| **Document Version** | |
-| **Date** | |
+| **Slime skate** | |
+| **Isaac J** | |
+| **10CT / Course** | |
+| **2026CT_GameDesign_SlimeSkate_Isaac.J** | |
+| **Unity 6** | |
 
 ---
 
