@@ -1,83 +1,127 @@
 using UnityEngine;
 
-public class SkateboardMovement : MonoBehaviour
+public class SkateboardController : MonoBehaviour
 {
+    // Movement settings
     public float moveForce = 20f;
     public float maxSpeed = 12f;
-    public float groundStickForce = 20f;
-    public float drag = 2f;
-    public LayerMask groundMask;
+    public float jumpForce = 12f;
+    public float resetHopForce = 5f;
+    public float tiltSpeed = 200f;
+
+    // Visual objects
+    public Transform boardVisual;   // rotates visually in air
+    public Transform rider;         // follows boardVisual with offset
 
     Rigidbody2D rb;
-    float groundAngle;
     bool grounded;
+    float groundAngle;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-void FixedUpdate()
-{
-    MoveAlongSlope_Fallback();
-
-    ApplyDrag();
-    ClampSpeed();
-}
-
-
-void UpdateGround()
-{
-    Vector2 origin = (Vector2)transform.position + Vector2.down * 0.2f;
-    float rayLength = 1.5f;
-
-    RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, rayLength, groundMask);
-
-    grounded = hit.collider != null;
-
-    if (grounded)
-        groundAngle = Vector2.SignedAngle(Vector2.up, hit.normal);
-}
-
-void MoveAlongSlope_Fallback()
-{
-    float input = Input.GetAxisRaw("Horizontal");
-
-    Vector2 moveDir;
-
-    if (!grounded)
+    void Update()
     {
-        moveDir = Vector2.right;
-    }
-    else
-    {
-        Vector2 slopeDirection = Quaternion.Euler(0, 0, groundAngle) * Vector2.right;
-        moveDir = slopeDirection;
+        DetectGround();
+        HandleJump();
+        HandleTilt();
+        HandleReset();
+        UpdateRider();
     }
 
-    rb.AddForce(moveDir * input * moveForce);
-}
+    void FixedUpdate()
+    {
+        HandleMovement();
+        ClampSpeed();
+    }
 
+    // -----------------------------
+    // Ground Detection
+    // -----------------------------
+    void DetectGround()
+    {
+        Vector2 origin = (Vector2)transform.position + Vector2.down * 0.2f;
+        RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, 1.5f);
 
-    void MoveAlongSlope()
+        grounded = hit.collider != null;
+
+        if (grounded)
+            groundAngle = Vector2.SignedAngle(Vector2.up, hit.normal);
+    }
+
+    // -----------------------------
+    // Movement (WASD)
+    // -----------------------------
+    void HandleMovement()
     {
         float input = Input.GetAxisRaw("Horizontal");
 
-        Vector2 slopeDirection = Quaternion.Euler(0, 0, groundAngle) * Vector2.right;
+        Vector2 moveDir = grounded
+            ? (Quaternion.Euler(0, 0, groundAngle) * Vector2.right)
+            : Vector2.right;
 
-        rb.AddForce(slopeDirection * input * moveForce);
+        rb.AddForce(moveDir * input * moveForce);
     }
 
-    void StickToGround()
+    // -----------------------------
+    // Jump (Space)
+    // -----------------------------
+    void HandleJump()
     {
-        rb.AddForce(Vector2.down * groundStickForce);
+        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
     }
 
-    void ApplyDrag()
+    // -----------------------------
+    // Air Tilt (Left/Right Arrows)
+    // -----------------------------
+    void HandleTilt()
     {
-        rb.linearVelocity *= 1f - (drag * Time.fixedDeltaTime);
+        if (!grounded && boardVisual != null)
+        {
+            float tilt = 0f;
+
+            if (Input.GetKey(KeyCode.LeftArrow)) tilt = -1f;
+            if (Input.GetKey(KeyCode.RightArrow)) tilt = 1f;
+
+            boardVisual.Rotate(Vector3.forward * tilt * tiltSpeed * Time.deltaTime);
+        }
     }
 
+    // -----------------------------
+    // Reset (Shift)
+    // -----------------------------
+    void HandleReset()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            rb.AddForce(Vector2.up * resetHopForce, ForceMode2D.Impulse);
+
+            if (boardVisual != null)
+                boardVisual.rotation = Quaternion.identity;
+        }
+    }
+
+    // -----------------------------
+    // Rider Follow (with Y+5 offset)
+    // -----------------------------
+    void UpdateRider()
+    {
+        if (rider != null && boardVisual != null)
+        {
+            Vector3 offset = new Vector3(0, 5f, 0);
+            rider.position = boardVisual.position + offset;
+            rider.rotation = boardVisual.rotation;
+        }
+    }
+
+    // -----------------------------
+    // Speed Clamp
+    // -----------------------------
     void ClampSpeed()
     {
         if (rb.linearVelocity.magnitude > maxSpeed)
