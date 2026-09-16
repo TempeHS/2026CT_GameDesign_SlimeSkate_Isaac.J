@@ -113,7 +113,7 @@ public class SkateboardController : MonoBehaviour
     {
         if (rider != null && boardVisual != null)
         {
-            Vector3 offset = new Vector3(0, 5f, 0);
+            Vector3 offset = new Vector3(0, 1.26f, 0);
             rider.position = boardVisual.position + offset;
             rider.rotation = boardVisual.rotation;
         }
