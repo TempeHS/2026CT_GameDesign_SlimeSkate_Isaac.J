@@ -2,33 +2,45 @@ using UnityEngine;
 
 public class SkateboardController : MonoBehaviour
 {
-    // Movement settings
     public float moveForce = 20f;
     public float maxSpeed = 12f;
-    public float jumpForce = 12f;
-    public float resetHopForce = 5f;
-    public float tiltSpeed = 200f;
 
-    // Visual objects
-    public Transform boardVisual;   // rotates visually in air
-    public Transform rider;         // follows boardVisual with offset
+    public float jumpForce = 12f;
+
+    bool grounded;
+    bool isJumpingAnimationPlaying;
+
+    public float tiltSpeed = 200f;
+    public float resetHopForce = 5f;
+
+    public Animator anim;
 
     Rigidbody2D rb;
-    bool grounded;
-    float groundAngle;
+    float input;
+
+    // Ground check settings
+    public Vector2 groundCheckSize = new Vector2(1.0f, 0.25f);
+    public float groundCheckOffsetY = -0.9f;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // FIX #3 — Ensure Animator reference is valid
+        if (anim == null)
+        {
+            anim = GetComponentInChildren<Animator>();
+            Debug.Log("Animator auto-assigned from child.");
+        }
     }
 
     void Update()
     {
-        DetectGround();
+        UpdateGrounded();
         HandleJump();
         HandleTilt();
         HandleReset();
-        UpdateRider();
+        UpdateAnimationState();
     }
 
     void FixedUpdate()
@@ -38,31 +50,21 @@ public class SkateboardController : MonoBehaviour
     }
 
     // -----------------------------
-    // Ground Detection
+    // PERFECT GROUND CHECK
     // -----------------------------
-    void DetectGround()
+    void UpdateGrounded()
     {
-        Vector2 origin = (Vector2)transform.position + Vector2.down * 0.2f;
-        RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, 1.5f);
-
-        grounded = hit.collider != null;
-
-        if (grounded)
-            groundAngle = Vector2.SignedAngle(Vector2.up, hit.normal);
+        Vector2 checkPos = (Vector2)transform.position + new Vector2(0, groundCheckOffsetY);
+        grounded = Physics2D.OverlapBox(checkPos, groundCheckSize, 0f, LayerMask.GetMask("Default"));
     }
 
     // -----------------------------
-    // Movement (WASD)
+    // Movement (A/D)
     // -----------------------------
     void HandleMovement()
     {
-        float input = Input.GetAxisRaw("Horizontal");
-
-        Vector2 moveDir = grounded
-            ? (Quaternion.Euler(0, 0, groundAngle) * Vector2.right)
-            : Vector2.right;
-
-        rb.AddForce(moveDir * input * moveForce);
+        input = Input.GetAxisRaw("Horizontal");
+        rb.AddForce(Vector2.right * input * moveForce);
     }
 
     // -----------------------------
@@ -77,18 +79,21 @@ public class SkateboardController : MonoBehaviour
     }
 
     // -----------------------------
-    // Air Tilt (Left/Right Arrows)
+    // Air Tilt (Arrow Keys)
     // -----------------------------
     void HandleTilt()
     {
-        if (!grounded && boardVisual != null)
+        if (!grounded)
         {
             float tilt = 0f;
 
-            if (Input.GetKey(KeyCode.LeftArrow)) tilt = -1f;
-            if (Input.GetKey(KeyCode.RightArrow)) tilt = 1f;
+            if (Input.GetKey(KeyCode.LeftArrow)) tilt = 1f;
+            if (Input.GetKey(KeyCode.RightArrow)) tilt = -1f;
 
-            boardVisual.Rotate(Vector3.forward * tilt * tiltSpeed * Time.deltaTime);
+            if (tilt != 0f)
+            {
+                transform.Rotate(Vector3.forward * tilt * tiltSpeed * Time.deltaTime);
+            }
         }
     }
 
@@ -97,25 +102,35 @@ public class SkateboardController : MonoBehaviour
     // -----------------------------
     void HandleReset()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (grounded && Input.GetKeyDown(KeyCode.LeftShift))
         {
             rb.AddForce(Vector2.up * resetHopForce, ForceMode2D.Impulse);
-
-            if (boardVisual != null)
-                boardVisual.rotation = Quaternion.identity;
+            transform.rotation = Quaternion.identity;
         }
     }
 
     // -----------------------------
-    // Rider Follow (with Y+5 offset)
+    // Animator State Machine (FIX #3)
     // -----------------------------
-    void UpdateRider()
+    void UpdateAnimationState()
     {
-        if (rider != null && boardVisual != null)
+        bool walking = Mathf.Abs(input) > 0.1f;
+        anim.SetFloat("walking", walking ? 1f : 0f);
+
+        // FIX #3 — Fire jump trigger ONCE when leaving ground
+        if (!grounded)
         {
-            Vector3 offset = new Vector3(0, 1.26f, 0);
-            rider.position = boardVisual.position + offset;
-            rider.rotation = boardVisual.rotation;
+            if (!isJumpingAnimationPlaying)
+            {
+                Debug.Log("JUMP TRIGGER FIRED");   // <--- CONFIRMATION
+                anim.SetTrigger("jumpOnce");       // <--- MUST match Animator
+                isJumpingAnimationPlaying = true;
+            }
+        }
+        else
+        {
+            // Reset animation state when grounded
+            isJumpingAnimationPlaying = false;
         }
     }
 
@@ -126,5 +141,15 @@ public class SkateboardController : MonoBehaviour
     {
         if (rb.linearVelocity.magnitude > maxSpeed)
             rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
+    }
+
+    // -----------------------------
+    // Draw ground check in Scene view
+    // -----------------------------
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Vector2 checkPos = (Vector2)transform.position + new Vector2(0, groundCheckOffsetY);
+        Gizmos.DrawWireCube(checkPos, groundCheckSize);
     }
 }
