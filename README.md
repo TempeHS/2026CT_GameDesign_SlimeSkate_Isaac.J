@@ -40,14 +40,14 @@
 ### 1.4 Win / Loss Conditions
 | Condition | Description |
 |---|---|
-| Win | |
-| Loss | |
+| Win | N/A, Win screens and objectives could not be inplemented in time to meet the deadline.|
+| Loss | Falling off the map.|
 
 ### 1.5 Platform & Build Settings
 | Setting | Detail |
 |---|---|
-| Target Platform | |
-| Resolution | |
+| Target Platform | Mac|
+| Resolution | 1980px by 1080px|
 | Build Type | |
 
 ---
@@ -87,19 +87,19 @@
 ### 3.1 Core Mechanics
 | ID | Mechanic | Description | Implemented In (Script/Object) |
 |---|---|---|---|
-| M-1 | | | |
-| M-2 | | | |
-| M-3 | | | |
-| M-4 | | | |
-| M-5 | | | |
+| M-1 | Jump| A simple jump animation in the form of a kickflip.| SkateboardController.cs|
+| M-2 | Tilt| While airborn, the arrow keys control to tilt of the skateboard, helping with issues of airborn spinning.| SkateboardController.cs|
+| M-3 | Tilt Reset| While grounded, shift will perform a small hop and reset the board's horisontal angle.| SkateboardController.cs|
+| M-4 | Wall Climb| While jumping on a wall while also being sideways, you will travel up said wall.| SkateboardController.cs|
+| M-5 | Double Jump Lock| Prevents you from double jumping.| SkateboardController.cs|
 
 ### 3.2 Player Controls
 | Action | Input (Keyboard / Controller) | Description |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+|Movement |W, A, D, S |Simple movement. |
+|Jump |Space |A simple jump animation in the form of a kickflip. |
+|Tilt |Left arrow key, Right Arrow key | |
+|Tilt Reset |Shift | |
 
 ### 3.3 Physics & Collision
 | Feature | Description |
@@ -205,28 +205,9 @@
 
 ## 5. Audio Design
 
-### 5.1 Music
-| Track | Scene / Trigger | Source / Composer |
-|---|---|---|
-| | | |
-| | | |
+N/A 
 
-### 5.2 Sound Effects
-| Sound Effect | Trigger | Source |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-
-### 5.3 Audio Implementation
-| Feature | Description |
-|---|---|
-| Audio Mixer / Groups | |
-| Spatial / 3D Audio | |
-| Dynamic Audio | |
-
----
+Sound effects and music could not be inplemented in time to meet the deadline.
 
 ## 6. User Interface & HUD
 
