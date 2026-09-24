@@ -22,20 +22,26 @@
 9. [Development Techniques & Tutorials Acknowledged](#9-development-techniques--tutorials-acknowledged)
 10. [Third-Party Content Acknowledgements](#10-third-party-content-acknowledgements)
 11. [Challenges & Solutions](#11-challenges--solutions)
-12. [Branch Development Summary](#12-branch-development-summary)
 
 ---
 
 ## 1. Game Overview
 
+Slime Skate is a 2D skateboarding platformer game with influences from genres like animemo and Shibuya punk. It has influences from things like Japanese nightlife and general urban culture, with inspirations from games like Tony Hawk's Pro Skater and Bomb Rush Cyberfunk.
+
 ### 1.1 Genre
 
+Platformer/ Skate Platformer.
 
 ### 1.2 Target Audience
 
+Slime Skates' target audience is quite flexible, but is generally aimed at the 13 to 17 age bracket. While there isn't anything stopping it from being enjoyed by other groups of people, the general themes and aesthetics align with that age bracket, with development aiming for the tone of the game to fit the desired playstyle usually enjoyed by that set of ages.
 
 ### 1.3 Game Summary
 
+In Slime Skate, the main objective is to perform skateboarding-based parkour and skate tricks while navigating the environment, aiming to achieve a higher score while doing so.
+
+Please note that some of this couldn't be implemented in this current build.
 
 ### 1.4 Win / Loss Conditions
 | Condition | Description |
@@ -48,39 +54,14 @@
 |---|---|
 | Target Platform | Mac|
 | Resolution | 1980px by 1080px|
-| Build Type | |
 
 ---
 
 ## 2. Video Walkthrough
 
-### 2.1 Full Gameplay Walkthrough
+<video controls src="0925(1).mov" title="Title"></video>
 
-<!--
-  Embed a YouTube/Vimeo video or link to a file in the repository.
-  YouTube embed syntax:
-  [![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
-
-  OR link to a local file:
-  [Watch Walkthrough Video](./docs/video/walkthrough.mp4)
--->
-
-| Field | Detail |
-|---|---|
-| **Video Title** | |
-| **Link / Embed** | |
-| **Duration** | |
-| **Description** | |
-
-### 2.2 Feature Highlight Clips
-
-| Clip | Description | Link |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-
----
+Please note that quality and audio had to be slightly diminished to fit the upload limit of GitHub Desktop.
 
 ## 3. Game Mechanics
 
@@ -98,30 +79,20 @@
 |---|---|---|
 |Movement |W, A, D, S |Simple movement. |
 |Jump |Space |A simple jump animation in the form of a kickflip. |
-|Tilt |Left arrow key, Right Arrow key | |
-|Tilt Reset |Shift | |
+|Tilt |Left arrow key, Right Arrow key |While midair, the board tilts left and right to give more control to the player. |
+|Tilt Reset |Shift |If the board is upside down, pressing Shift will reset the board's angle while also giving a small height boost. |
 
 ### 3.3 Physics & Collision
-| Feature | Description |
-|---|---|
-| | |
-| | |
-| | |
+
+There aren't any standard changes to the physics and collision in this game, as the physics and collision have been tailored purposely to suit the experience of riding a skateboard.
 
 ### 3.4 Game Loop
-| Stage | Description |
-|---|---|
-| Start / Initialisation | |
-| Core Loop | |
-| Win / End State | |
-| Restart | |
+
+There isn't a traditional game loop in this current build of my game. Given the time I was given to create it, right now it mainly acts as a sandbox world to then be created into a proper skateboarding game.
 
 ### 3.5 Scoring & Progression
-| Element | Description |
-|---|---|
-| Scoring System | |
-| Difficulty Progression | |
-| Unlockables / Levels | |
+
+There was a planned scoring system which would hinge on a multiplication system that would multiply depending on the difficulty of the trick performed and the level of the ongoing score, but due to time restrictions, I wasn't able to implement that into the current build.
 
 ---
 
@@ -129,79 +100,32 @@
 
 ### 4.1 Particle Effects
 
-| Effect Name | Purpose | Screenshot |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+N/A
 
-> Add screenshot images using: `![Effect Name](./docs/screenshots/effect_name.png)`
-
----
 
 ### 4.2 Cut Scenes & Cinematics
 
-| Cut Scene | Trigger | Description | Screenshot / Still |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-
-> Add screenshot images using: `![Cut Scene Name](./docs/screenshots/cutscene_name.png)`
-
----
+N/A, In multimedia, a cutscene was not provided to me. Because of this, I could not implement one into my game. 
 
 ### 4.3 Animations
 
-| Animation | Object / Character | Description | Screenshot |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-
-> Add screenshot images using: `![Animation Name](./docs/screenshots/animation_name.png)`
+| Animation | Object / Character | Description |
+|Skateboard Movement | Skateboard| A simple animation of light moving across the wheels of a skateboard, implying movement.|
+|Skateboard Jump |Skateboard |A simple kickflip animation while airborne to signify a jump. |
 
 ---
 
 ### 4.4 Lighting & Post-Processing
 
-| Feature | Description | Screenshot |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-
-> Add screenshot images using: `![Feature Name](./docs/screenshots/lighting_name.png)`
-
----
+N/A
 
 ### 4.5 Shaders & Materials
 
-| Shader / Material | Applied To | Description | Screenshot |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
+N/A
 
-> Add screenshot images using: `![Shader Name](./docs/screenshots/shader_name.png)`
-
----
+This could not be inplemented in time to meet the deadline.
 
 ### 4.6 Additional Visual Screenshots
-
-<!--
-  Add any other notable screenshots here.
-  Syntax: ![Description](./docs/screenshots/filename.png)
--->
-
-| Description | Screenshot |
-|---|---|
-| | |
-| | |
-| | |
-
----
 
 ## 5. Audio Design
 
@@ -211,81 +135,38 @@ Sound effects and music could not be inplemented in time to meet the deadline.
 
 ## 6. User Interface & HUD
 
-### 6.1 HUD Elements
-| Element | Purpose | Screenshot |
-|---|---|---|
-| | | |
-| | | |
-| | | |
+N/A 
 
-> Add screenshot images using: `![HUD Element](./docs/screenshots/hud_name.png)`
-
-### 6.2 Menus
-| Menu | Purpose | Screenshot |
-|---|---|---|
-| Main Menu | | |
-| Pause Menu | | |
-| Game Over Screen | | |
-| | | |
-
-> Add screenshot images using: `![Menu Name](./docs/screenshots/menu_name.png)`
-
----
+User Interface & HUD could not be inplemented in time to meet the deadline.
 
 ## 7. Scene & Level Design
 
 ### 7.1 Scene List
-| Scene Name | Purpose | Description |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+
+ N/A
+
+Scenes could not be inplemented in time to meet the deadline.
 
 ### 7.2 Level / Environment Screenshots
 | Level / Area | Description | Screenshot |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+|1 |Neo Shibuya (night) |Neo Shibuya is a shopping district linked to an urban street where the game is set, with skyscrapers littered with advertisements in the background, and vandalised ramps and pathways setting the scene in the foreground. |
 
-> Add screenshot images using: `![Level Name](./docs/screenshots/level_name.png)`
 
 ### 7.3 Scene Management
-| Feature | Description |
-|---|---|
-| Scene Loading Method | |
-| Persistent Data Between Scenes | |
-| Scene Transition Effects | |
 
----
+ N/A
+
+Scene Management could not be inplemented in time to meet the deadline.
 
 ## 8. Scripts & Programming
 
 ### 8.1 Script Summary
 | Script Name | Attached To | Responsibility |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+|SkateboardController.cs |Skateboard |SkateboardController.cs handles everything to do with the physics of the skateboard and its interactions within the game. It handles by itself: Aerial ground check, Script management, Everything to do with velocity and speed, General tweaking of the physics while airborne and on the ground, Controls, tilting, tilt reset, and management of animations |
+|CameraController.cs |Maincamera |Smoothly controls the camera by following an attached object, with built-in offset and smoothness rework. |
 
-### 8.2 Key Algorithms / Logic
-| Feature | Script | Description |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-
-### 8.3 Design Patterns Used
-| Pattern | Where Applied | Justification |
-|---|---|---|
-| | | |
-| | | |
-| | | |
-
----
 
 ## 9. Development Techniques & Tutorials Acknowledged
 
@@ -293,14 +174,8 @@ Sound effects and music could not be inplemented in time to meet the deadline.
 
 | # | Title | Author / Creator | URL / Source | What You Used It For | What You Changed / Adapted |
 |---|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
+| 1 |How To Add Parallax Effect Background In Unity 6 |Unity Unlocked |https://www.youtube.com/watch?v=uFDed21LSwg |I used this video to aid with deepening the background and giving more depth to the general environment of my game. |I adapted this to work in a 2D environment. |
+| 2 |Walk, Idle, and Turn Around: Action RPG in Unity Tutorial #2 | Night Run Studio |https://www.youtube.com/watch?v=swCFvAxYKBE |This was used to finally fix my ongoing issues with my animations, aiding greatly in making my game look more polished.  |Nothing needed to be adapted, as the tutorial was made in a 2D environment in Unity 6. |
 
 ---
 
@@ -308,38 +183,7 @@ Sound effects and music could not be inplemented in time to meet the deadline.
 
 > All third-party assets (art, audio, fonts, scripts, packages) must be listed here with their licence. Using an asset without acknowledgement may constitute academic misconduct.
 
-### 10.1 Visual Assets
-| Asset Name | Type | Creator / Source | Licence | URL | Used For |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-
-### 10.2 Audio Assets
-| Asset Name | Type | Creator / Source | Licence | URL | Used For |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-
-### 10.3 Scripts & Code Snippets
-| Script / Snippet | Source | Licence | URL | Used For | Changes Made |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-
-### 10.4 Unity Packages & Plugins
-| Package Name | Version | Source | Licence | URL | Purpose |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-
-### 10.5 Fonts
-| Font Name | Creator / Source | Licence | URL |
-|---|---|---|---|
-| | | | |
-| | | | |
+All content was created and produced by myself.
 
 ---
 
@@ -347,200 +191,10 @@ Sound effects and music could not be inplemented in time to meet the deadline.
 
 | # | Challenge Encountered | How It Was Solved |
 |---|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 |Continuous difficulty with implementing the correct animations. |While this challenge wasn't completely solved, parts of it were in ways that I'm quite happy with. I used a float system combined with my ground check and input check systems in SkateboardController.cs to implement a smooth walking animation. While the jumping animation couldn't be implemented in time, this had served as a major roadblock, and even with it in this condition, I believe that I achieved partially what I set out to do. |
+| 2 |Ground check and input check |With movement being vital in a game such as this, my ground check and input checks were an intuitive way to fix my problems with motion. These two check systems helped with: Registering if the board was airborne, Stopping the infinite jumping problem, where mashing the spacebar or shift would give you infinite leverage, Monitoring things like velocity and Enhancing the accuracy and level of comfort of the controls. |
 
 ---
 
-## 12. Branch Development Summary
-
-> One section per feature branch. Add or remove sections to match your repository. Branches should be named for the feature they implement e.g. `feature/player-movement`. Link each branch name directly to the branch in your GitHub repository.
-
----
-
-### Branch 1 — `main`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | `main` |
-| **Purpose** | Stable, releasable version of the game |
-| **Merged From** | |
-| **Final Commit** | |
-
----
-
-### Branch 2 — `feature/`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
-
-#### What Was Built
-<!-- Describe what this branch added or changed -->
-
-#### Key Commits
-| Commit Message | What Changed |
-|---|---|
-| | |
-| | |
-| | |
-
-#### Problems Encountered & Resolved
-| Problem | Resolution |
-|---|---|
-| | |
-| | |
-
-#### Screenshot / Evidence
-<!-- Add a screenshot of the feature working -->
-> `![Feature Name](./docs/screenshots/branch_feature_name.png)`
-
----
-
-### Branch 3 — `feature/`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
-
-#### What Was Built
-
-
-#### Key Commits
-| Commit Message | What Changed |
-|---|---|
-| | |
-| | |
-| | |
-
-#### Problems Encountered & Resolved
-| Problem | Resolution |
-|---|---|
-| | |
-| | |
-
-#### Screenshot / Evidence
-> `![Feature Name](./docs/screenshots/branch_feature_name.png)`
-
----
-
-### Branch 4 — `feature/`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
-
-#### What Was Built
-
-
-#### Key Commits
-| Commit Message | What Changed |
-|---|---|
-| | |
-| | |
-| | |
-
-#### Problems Encountered & Resolved
-| Problem | Resolution |
-|---|---|
-| | |
-| | |
-
-#### Screenshot / Evidence
-> `![Feature Name](./docs/screenshots/branch_feature_name.png)`
-
----
-
-### Branch 5 — `feature/`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
-
-#### What Was Built
-
-
-#### Key Commits
-| Commit Message | What Changed |
-|---|---|
-| | |
-| | |
-| | |
-
-#### Problems Encountered & Resolved
-| Problem | Resolution |
-|---|---|
-| | |
-| | |
-
-#### Screenshot / Evidence
-> `![Feature Name](./docs/screenshots/branch_feature_name.png)`
-
----
-
-### Branch 6 — `feature/`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
-
-#### What Was Built
-
-
-#### Key Commits
-| Commit Message | What Changed |
-|---|---|
-| | |
-| | |
-| | |
-
-#### Problems Encountered & Resolved
-| Problem | Resolution |
-|---|---|
-| | |
-| | |
-
-#### Screenshot / Evidence
-> `![Feature Name](./docs/screenshots/branch_feature_name.png)`
-
----
-
-### Branch Development Overview
-
-> Complete this summary table once all branches are finished.
-
-| Branch Name | Feature | Date Started | Date Merged | Status |
-|---|---|---|---|---|
-| `main` | Stable release | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
-
----
 
 > **Student Declaration:** All work submitted is my own except where explicitly acknowledged above.
