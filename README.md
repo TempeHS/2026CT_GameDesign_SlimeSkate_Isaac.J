@@ -63,6 +63,8 @@ Please note that some of this couldn't be implemented in this current build.
 
 Please note that quality and audio had to be slightly diminished to fit the upload limit of GitHub Desktop.
 
+(Some web browsers cannot view the embedded file, so the video is also attached in the root of the repository for your convenience.)
+
 ## 3. Game Mechanics
 
 ### 3.1 Core Mechanics
